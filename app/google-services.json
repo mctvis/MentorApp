@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "580699819147",
+    "firebase_url": "https://mentorapp-ff56b.firebaseio.com",
+    "project_id": "mentorapp-ff56b",
+    "storage_bucket": "mentorapp-ff56b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580699819147:android:376720cc3b346588",
+        "android_client_info": {
+          "package_name": "com.example.mentorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580699819147-e8do9poed0hpo37mqonkhrr6s203b484.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mentorapp",
+            "certificate_hash": "1d30f4711c118ae2d37ddf1a58132819a6183137"
+          }
+        },
+        {
+          "client_id": "580699819147-q436beo6ecpqklpnf611cm1i06vpehl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZJzlziugW8cc9y1L-_FhgrhqJIGwIiWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580699819147-q436beo6ecpqklpnf611cm1i06vpehl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

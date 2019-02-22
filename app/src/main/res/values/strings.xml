@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MentorApp</string>
+    <string name="Welcome">Welcome to MainActivity (After login)</string>
+    <string name="Login">This is login Page</string>
+    <string name="Reg">NEW REGISTER</string>
+    <string name="create_a_new_account">CREATE A NEW ACCOUNT</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+
+</resources>
