@@ -49,8 +49,6 @@ public class RegisterActivity extends AppCompatActivity {
                     userTypeFlag = "S";
                 else if (checkedId == R.id.radio_mentor)
                     userTypeFlag = "M";
-
-                Log.d("TYPE_FLAG", userTypeFlag);
             }
         });
 
