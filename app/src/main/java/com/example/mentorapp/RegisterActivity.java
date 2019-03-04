@@ -24,6 +24,8 @@ public class RegisterActivity extends AppCompatActivity {
     private TextInputEditText mEmail;
     private TextInputEditText mPassword;
     private Button mCreateButton;
+    private RadioGroup radioGroup;
+    private RadioButton student, mentor;
     public String userTypeFlag;
 
     private FirebaseAuth mAuth;
@@ -39,6 +41,19 @@ public class RegisterActivity extends AppCompatActivity {
         mPassword = findViewById(R.id.reg_password);
         mCreateButton = findViewById(R.id.reg_create_btn);
 
+        radioGroup = findViewById(R.id.radioGroup);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.radio_student)
+                    userTypeFlag = "S";
+                else if (checkedId == R.id.radio_mentor)
+                    userTypeFlag = "M";
+
+                Log.d("TYPE_FLAG", userTypeFlag);
+            }
+        });
+
         mCreateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,23 +64,6 @@ public class RegisterActivity extends AppCompatActivity {
                 register_user(email, password);
             }
         });
-    }
-
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.radio_mentor:
-                if (checked)
-                    userTypeFlag = "M";
-                break;
-            case R.id.radio_student:
-                if (checked)
-                    userTypeFlag = "S";
-                break;
-        }
     }
 
     private void register_user(String email, String password) {
