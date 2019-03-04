@@ -11,5 +11,7 @@
     <string name="SignOut">SignOut</string>
     <string name="Signin">LogIn</string>
     <string name="Log_in_with_email">LOG IN WITH EMAIL</string>
+    <string name="student">Student</string>
+    <string name="mentor">Mentor</string>
 
 </resources>

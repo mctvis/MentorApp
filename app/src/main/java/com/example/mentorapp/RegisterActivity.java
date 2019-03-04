@@ -5,9 +5,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,6 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
     private TextInputEditText mEmail;
     private TextInputEditText mPassword;
     private Button mCreateButton;
+    public String userTypeFlag;
 
     private FirebaseAuth mAuth;
 
@@ -45,6 +49,23 @@ public class RegisterActivity extends AppCompatActivity {
                 register_user(email, password);
             }
         });
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.radio_mentor:
+                if (checked)
+                    userTypeFlag = "M";
+                break;
+            case R.id.radio_student:
+                if (checked)
+                    userTypeFlag = "S";
+                break;
+        }
     }
 
     private void register_user(String email, String password) {

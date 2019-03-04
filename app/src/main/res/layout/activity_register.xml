@@ -36,6 +36,24 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:hint="@string/password"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_mentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mentor"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
     <Button
         android:id="@+id/reg_create_btn"
         android:layout_width="wrap_content"
