@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.mentorapp.login.LoginActivity;
+import com.example.mentorapp.login.RegisterActivity;
+
 public class StartActivity extends AppCompatActivity {
 
     private Button mRegButton;
